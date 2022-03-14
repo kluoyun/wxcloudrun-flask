@@ -56,6 +56,9 @@ def count():
     else:
         return make_err_response('action参数错误')
 
+@app.route('/api/test', methods=['GET'])
+def test():
+    return make_err_response('TEST')
 
 @app.route('/api/count', methods=['GET'])
 def get_count():
